@@ -1,119 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lishlie Marie Baque | Portfolio</title>
+    <title>Lishlie Marie Baque | Student Portfolio</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">BAQUE.</h2>
+    <!-- ================= NAVIGATION ================= -->
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="navbar">
+
+        <div class="logo">
+            BAQUE<span>.</span>
+        </div>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
     </header>
 
 
-    <!-- Home Section -->
-    <section id="home" class="home">
+    <!-- ================= HOME ================= -->
 
-        <div class="home-text">
-            <p class="small-text">WELCOME TO MY PORTFOLIO</p>
+    <section id="home" class="hero section">
 
-            <h1>Hello, I'm <span>Lishlie Marie Baque </span></h1>
+        <div class="hero-content">
 
-            <h3>Student & Aspiring Web Developer</h3>
-
-            <p>
-            Welcome to my personal portfolio website.
-                Here you can learn more about me, my skills,
-                and the projects I have created.
+            <p class="index">
+                PORTFOLIO —
             </p>
 
-            <a href="#about" class="button">Explore My Portfolio</a>
+            <h1>
+                Lishlie Marie Baque.
+                <br>
+                Student & Future
+                <span>IT Professional.</span>
+            </h1>
+
+            <p class="intro">
+                I am a BS Information Technology student at Eastern Samar
+                State University. I enjoy learning web development,
+                programming, and creating simple digital projects.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="text-link">
+                    Get in touch →
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="profile">
-            <div class=" profile-circle">
-                <div class="profile-icon">LM</div>
-                    <img src="">
+
+        <div class="profile-card">
+
+            <div class="profile-frame">
+
+                <img src="images/Messenger_creation_256CEB6C-DE03-454C-810E-0909BE7F5FF6.png"
+                     alt="Lishlie Marie Baque">
+
+                <p>BS INFORMATION TECHNOLOGY</p>
+
+            </div>
+
+            <p class="profile-caption"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section about">
+
+        <p class="index">
+        </p>
+
+        <h2>About</h2>
+
+        <div class="about-grid">
+
+            <div>
+
+                <p>
+                    Hello! My name is <strong>Lishlie Marie Baque</strong>.
+                    I am a BS Information Technology student at
+                    <strong>Eastern Samar State University (ESSU)</strong>.
+                </p>
+
+                <p>
+                    I am interested in learning programming, web design,
+                    and different technologies. As a student, I continue
+                    to improve my skills by creating projects and
+                    practicing what I learn in class.
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <h3>Currently Learning</h3>
+
+                <ul>
+                    <li>Web Development</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>C++ Programming</li>
+                    <li>C# Programming</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section skills">
+
+        <p class="index">
+        </p>
+
+        <h2>Skills</h2>
+
+
+        <div class="skills-grid">
+
+            <!-- LANGUAGES -->
+
+            <div class="skill-category">
+
+                <h3>LANGUAGES</h3>
+
+                <div class="skill-item">
+                    <span>HTML</span>
+                    <span>85%</span>
                 </div>
-            </div>
-        </div>
 
-    </section>
+                <div class="progress">
+                    <div style="width:85%"></div>
+                </div>
 
 
-    <!-- About Section -->
-    <section id="about" class="section">
+                <div class="skill-item">
+                    <span>CSS</span>
+                    <span>80%</span>
+                </div>
 
-        <h2 class="section-title">About Me</h2>
+                <div class="progress">
+                    <div style="width:80%"></div>
+                </div>
 
-        <div class="about-box">
 
-            <div class="about-design">
-                <span>HELLO!</span>
-            </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <span>65%</span>
+                </div>
 
-            <div class="about-text">
-
-                <h2>Hi, I'm Lishlie Marie Baque</h2>
-
-                <p>
-                    I am a student who is interested in technology,
-                    web design, and programming. I enjoy learning
-                    new things and creating simple but useful
-                    websites.
-                </p>
-
-                <p>
-                    My goal is to improve my skills in web development
-                    and create creative and user-friendly websites.
-                </p>
+                <div class="progress">
+                    <div style="width:65%"></div>
+                </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <!-- TOOLS -->
 
+            <div class="skill-category">
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+                <h3>TOOLS</h3>
 
-        <h2 class="section-title">My Skills</h2>
+                <ul class="simple-list">
+                    <li>VS Code</li>
+                    <li>Git / GitHub</li>
+                    <li>Visual Studio</li>
+                    <li>Microsoft Office</li>
+                </ul>
 
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <div class="skill-number">01</div>
-                <h3>HTML</h3>
-                <p>Creating the structure of websites.</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-number">02</div>
-                <h3>CSS</h3>
-                <p>Designing beautiful and responsive pages.</p>
-            </div>
 
-            <div class="skill-card">
-                <div class="skill-number">03</div>
-                <h3>JavaScript</h3>
-                <p>Adding simple interactions to websites.</p>
+            <!-- OTHER -->
+
+            <div class="skill-category">
+
+                <h3>OTHER</h3>
+
+                <ul class="simple-list">
+                    <li>Problem Solving</li>
+                    <li>Basic UI Design</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                </ul>
+
             </div>
 
         </div>
@@ -121,52 +232,494 @@
     </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
+    <!-- ================= PROJECTS ================= -->
 
-        <h2 class="section-title">My Projects</h2>
+    <section id="projects" class="section projects">
 
-        <div class="projects-container">
+        <p class="index">
+        </p>
 
-            <div class="project-card">
-                <div class="project-top">01</div>
+        <h2>Projects</h2>
 
-                <h3>Personal Portfolio</h3>
 
-                <p>
-                    A simple personal portfolio website
-                    created using HTML and CSS.
-                </p>
+        <div class="project-grid">
 
-                <span>HTML • CSS</span>
+
+            <!-- ================= PROJECT 1 ================= -->
+            <!-- HIGH SCHOOL VOTING SYSTEM -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="images/Messenger_creation_29036D99-C96F-4211-8622-C0FE151C6699.jpeg"
+                         alt="High School Voting System">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        High School Voting System
+                    </h3>
+
+                    <p>
+                        A computerized voting system designed for
+                        high school elections. It allows users to
+                        register voters, manage candidates, cast votes,
+                        and view voting results in an organized way.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>C#</span>
+                        <span>Visual Studio</span>
+                        <span>Database</span>
+                        <span>Voting System</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#"
+                           onclick="showMessage('Live demo is not available yet.'); return false;">
+                            Live Demo
+                        </a>
+
+                        <a href="#"
+                           onclick="showMessage('Source code link can be added here.'); return false;">
+                            Source
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= PROJECT 2 ================= -->
+            <!-- PERSONAL PORTFOLIO -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="images/screenshot-1789602576596pic.png"
+                         alt="Personal Portfolio">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+                        A responsive personal portfolio website that
+                        presents my background, skills, education,
+                        and student projects.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#home">
+                            Live Demo
+                        </a>
+
+                        <a href="#"
+                           onclick="showMessage('Source code link can be added here.'); return false;">
+                            Source
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= PROJECT 3 ================= -->
+            <!-- COLOREASE MOBILE APP -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <img src="images/ColorEase.png"
+                         alt="ColorEase Mobile App">
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <h3>
+                        ColorEase Mobile App
+                    </h3>
+
+                    <p>
+                        A mobile app designed to help users identify
+                        colors easily. It provides simple features such
+                        as color scanning, voice guidance, and
+                        accessibility settings.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>UI/UX Design</span>
+                        <span>Mobile App</span>
+                        <span>Accessibility</span>
+                        <span>Color Scanner</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#"
+                           onclick="showMessage('ColorEase mobile app demo is not available yet.'); return false;">
+                            Live Demo
+                        </a>
+
+                        <a href="#"
+                           onclick="showMessage('ColorEase source code link can be added here.'); return false;">
+                            Source
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section education">
+
+        <p class="index">
+            INDEX 04
+        </p>
+
+        <h2>
+            Experience & Education
+        </h2>
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <div class="timeline-section">
+
+            <h3 class="section-label">
+                EXPERIENCE
+            </h3>
+
+
+            <div class="timeline">
+
+
+                <!-- EXPERIENCE 1 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            STUDENT PROJECT
+                        </span>
+
+                        <h3>
+                            Student Developer
+                        </h3>
+
+                        <h4>
+                            School Projects
+                        </h4>
+
+                        <p>
+                            Created programming and web development
+                            projects as part of my studies in
+                            Information Technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EXPERIENCE 2 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            ACADEMIC PROJECT
+                        </span>
+
+                        <h3>
+                            Web Developer
+                        </h3>
+
+                        <h4>
+                            Personal Portfolio Project
+                        </h4>
+
+                        <p>
+                            Designed and developed a personal portfolio
+                            website using HTML, CSS, and JavaScript to
+                            showcase my background, skills, and projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EXPERIENCE 3 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            SCHOOL PROJECT
+                        </span>
+
+                        <h3>
+                            System Developer
+                        </h3>
+
+                        <h4>
+                            High School Voting System
+                        </h4>
+
+                        <p>
+                            Developed a computerized voting system for
+                            a school project using C# and Visual Studio.
+                            The system includes voter registration,
+                            candidate management, voting, and results.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EXPERIENCE 4 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            ACADEMIC PROJECT
+                        </span>
+
+                        <h3>
+                            UI/UX Designer
+                        </h3>
+
+                        <h4>
+                            ColorEase Mobile App
+                        </h4>
+
+                        <p>
+                            Created a mobile application interface
+                            focused on accessibility, usability,
+                            simple navigation, and visual support
+                            for users with different accessibility needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EXPERIENCE 5 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            CURRENT
+                        </span>
+
+                        <h3>
+                            IT Student
+                        </h3>
+
+                        <h4>
+                            Personal Learning
+                        </h4>
+
+                        <p>
+                            Continuously practicing programming,
+                            web design, database concepts, and
+                            computer-related skills while learning
+                            new technologies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
-
-            <div class="project-card">
-                <div class="project-top">02</div>
-
-                <h3>Student Website</h3>
-
-                <p>
-                    A simple website project designed
-                    for student activities.
-                </p>
-
-                <span>HTML • CSS • JS</span>
-            </div>
+        </div>
 
 
-            <div class="project-card">
-                <div class="project-top">03</div>
 
-                <h3>Web Design</h3>
+        <!-- ================= EDUCATION ================= -->
 
-                <p>
-                    A creative website layout focused
-                    on clean and simple design.
-                </p>
+        <div class="timeline-section">
 
-                <span>WEB DESIGN</span>
+            <h3 class="section-label">
+                EDUCATION
+            </h3>
+
+
+            <div class="timeline">
+
+
+                <!-- EDUCATION 1 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            PRESENT
+                        </span>
+
+                        <h3>
+                            Bachelor of Science in
+                            Information Technology
+                        </h3>
+
+                        <h4>
+                            Eastern Samar State University
+                        </h4>
+
+                        <p>
+                            Currently studying programming,
+                            web development, computer systems,
+                            information technology, and other
+                            IT-related subjects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EDUCATION 2 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            COMPLETED
+                        </span>
+
+                        <h3>
+                            Senior High School
+                        </h3>
+
+                        <h4>
+                            [Barobo Llorente E.S]
+                        </h4>
+
+                        <p>
+                            Completed senior high school education
+                            and developed foundational knowledge
+                            in computer technology, digital tools,
+                            and academic skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EDUCATION 3 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div>
+
+                        <span class="date">
+                            RELEVANT STUDIES
+                        </span>
+
+                        <h3>
+                            Relevant Coursework
+                        </h3>
+
+                        <h4>
+                            Information Technology
+                        </h4>
+
+                        <p>
+                            Programming • Web Development •
+                            Database Management • Human-Computer
+                            Interaction • Computer Systems
+                        </p>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
         </div>
@@ -174,46 +727,105 @@
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
 
-        <h2 class="section-title">Contact Me</h2>
+    <!-- ================= CONTACT ================= -->
 
-        <div class="contact-box">
+    <section id="contact" class="section contact">
 
-            <h2>Let's Connect!</h2>
+        <p class="index">
+            INDEX 05
+        </p>
 
-            <p>
-                If you want to know more about me,
-                you can contact me through the information below.
-            </p>
+        <h2>
+            Get in touch
+        </h2>
+
+        <p class="contact-text">
+            I am currently focused on improving my skills as an
+            Information Technology student. Feel free to contact
+            me for school projects, collaboration, or future
+            opportunities.
+        </p>
+
+
+        <div class="contact-container">
+
+
+            <!-- CONTACT INFO -->
 
             <div class="contact-info">
 
-                <p>📧 Email: baquelishliemariec@gmail.com</p>
+                <h3>Contact Information</h3>
 
-                <p>📱 Phone: 09675229799</p>
+                <a href="mailto:your-email@gmail.com">
+                    your-email@gmail.com
+                </a>
 
-                <p>📍 Location: Llorente E.S</p>
+                <a href="#">
+                    github.com/yourusername
+                </a>
+
+                <a href="#">
+                    linkedin.com/in/yourusername
+                </a>
 
             </div>
+
+
+
+            <!-- CONTACT FORM -->
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="your-email@gmail.com"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
 
         </div>
 
     </section>
 
+<!-- ================= FOOTER ================= -->
 
-    <!-- Footer -->
-    <footer>
+    
+</footer>
+    <p>
+        © <span id="year"></span> Lishlie Marie Baque. All Rights Reserved.
+    </p>
+</footer> 
 
-        <p>
-            © 2026 Lishlie Marie Baque. All Rights Reserved.
-        </p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
+<!-- JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>
+
+      
+
+
+
+
+
